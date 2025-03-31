@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Демонстрируются примеры опций для плагина bespoke-scroll-bar">
+    <title>Demo для плагина bespoke-scroll-bar</title>
+    <link rel="stylesheet" href="files/style-bespoke-scroll-bar.css">
+<link href="css/style.1afc0d737040cf9f9e4e.css" rel="stylesheet"></head>
+
+<body>
+    <div class="wrap">
+    <h1 class="caption caption--h1">Демонстрация для опций плагина <span style="color:red;">bespoke</span>-<span
+            style="color:blue">scroll</span>-<span style="color:green">bar</span></h1>
+
+    <p class="text">Демонстрация наглядно показывает особенности использования опций для плагина <span
+            style="color:red;">bespoke</span>-<span style="color:blue">scroll</span>-<span
+            style="color:green">bar</span>. На странице не используются слайдеры, которые блокируют скрол внутри блоков,
+        поэтому полю <strong>isScroll</strong> в опциях присвоено соответветствующие значение <code
+            class="text__code">isScroll: false</code></p>
+
+    <main>
+
+        <section class="demo">
+            <h2 class="caption caption--h2">Скролл бар снаружи блока и равен его высоте</h2>
+            <div class="demo__wrap">
+                <div class="demo__box box box--variant-1">
+                    <div class="box__content">
+                        <p class="box__text box__text--sticky">Начало блока</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                    </div>
+                </div>
+                <div class="demo__code code">
+                    <span class="code__marker">js</span>
+                    <pre>
+                    <code>
+bespokeScrollBar({
+    selectorAria: ".box--variant-1",
+    widthInput: 5,
+    thumbBackground: "rgba(175, 252, 65, 1)",
+    trackBackground: "red",
+    right: 12,
+    borderRadius: 90,
+    isScroll: false
+})                    
+                 </code>
+                </pre>
+                </div>
+            </div>
+
+            <div class="demo__description">
+                <p class="text">Селектор по которому плагин нашел нужный блок <code class="text__code">.box--variant-1</code>. Толщина ползунка - 5 пикселей, его положение определено правее блока на 12 пикселей.</p>
+            </div>
+        </section>
+
+        <section class="demo">
+            <h2 class="caption caption--h2">Скролл бар снаружи блока и составляет 90% его высоты</h2>
+            <div class="demo__wrap">
+                <div class="demo__box box box--variant-2">
+                    <div class="box__content">
+                        <p class="box__text box__text--sticky">Начало блока</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                    </div>
+                </div>
+                <div class="demo__code code">
+                    <span class="code__marker">js</span>
+                    <pre>
+                    <code>
+bespokeScrollBar({
+    selectorAria: ".box--variant-2",
+    widthInput: 7,
+    thumbBackground: "#A64B00",
+    trackBackground: "#009999",
+    right: 10,
+    borderRadius: 50,
+    stripHeight: 80,
+    isScroll: false
+})                    
+                 </code>
+                </pre>
+                </div>
+            </div>
+
+            <div class="demo__description">
+                <p class="text">Селектор по которому плагин нашел нужный блок <code class="text__code">.box--variant-2</code>. Толщина ползунка - 7 пикселей, его положение определено правее блока на 10 пикселей. Поле <code class="text__code">stripHeigth</code> определяет соотношение высоты блока и высоту скрол бара. На демонстрации оно состовляет 80% и располагается посредине.</p>
+            </div>
+        </section>
+
+        <section class="demo">
+            <h2 class="caption caption--h2">Скролл бар снаружи блока, составляет 80% его высоты и сдвинут к его нижнему краю</h2>
+            <div class="demo__wrap">
+                <div class="demo__box box box--variant-3">
+                    <div class="box__content">
+                        <p class="box__text box__text--sticky">Начало блока</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                    </div>
+                </div>
+                <div class="demo__code code">
+                    <span class="code__marker">js</span>
+                    <pre>
+                    <code>
+bespokeScrollBar({
+    selectorAria: ".box--variant-3",
+    widthInput: 5,
+    thumbBackground: "#FFB273",
+    trackBackground: "#5CCCCC",
+    right: 15,
+    borderRadius: 50,
+    stripHeight: 80,
+    customTransformY: 73,
+    isScroll: false
+})                    
+                 </code>
+                </pre>
+                </div>
+            </div>
+
+            <div class="demo__description">
+                <p class="text">Селектор по которому плагин нашел нужный блок <code class="text__code">.box--variant-3</code>. Толщина ползунка - 5 пикселей, его положение определено правее блока на 15 пикселей. Поле <code class="text__code">stripHeigth</code> определяет соотношение высоты блока и высоту скрол бара. На демонстрации оно состовляет 80% и благодаря<code class="text__code">customTransformY</code> сдвинуто вниз.</p>
+            </div>
+        </section>
+
+        <section class="demo">
+            <h2 class="caption caption--h2">Скролл бар внутри блока, составляет 90% его высоты</h2>
+            <div class="demo__wrap">
+                <div class="demo__box box box--variant-4">
+                    <div class="box__content">
+                        <p class="box__text box__text--sticky">Начало блока</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                        <p class="box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque
+                            molestiae fugit dolorum sapiente quisquam adipisci beatae mollitia praesentium ad. Eum
+                            voluptas possimus iste neque adipisci cupiditate, ratione accusamus laudantium!</p>
+                    </div>
+                </div>
+                <div class="demo__code code">
+                    <span class="code__marker">js</span>
+                    <pre>
+                    <code>
+bespokeScrollBar({
+    selectorAria: ".box--variant-4",
+    widthInput: 5,
+    thumbBackground: "#FF9200",
+    trackBackground: "#28a1ff",
+    right: -15,
+    borderRadius: 70,
+    stripHeight: 90,
+    isScroll: false
+})                    
+                 </code>
+                </pre>
+                </div>
+            </div>
+
+            <div class="demo__description">
+                <p class="text">Селектор по которому плагин нашел нужный блок <code class="text__code">.box--variant-4</code>. Толщина ползунка - 5 пикселей, его положение определено внутри блока и от левого края скрол бара до правого края блока состовляет 15 пикселей. Поле <code class="text__code">stripHeigth</code> определяет соотношение высоты блока и высоту скрол бара. На демонстрации оно состовляет 90% и располагается посредине</p>
+            </div>
+        </section>
+    </main>
+</div>
+    <script src="files/js-bespoke-scroll-bar.js"></script>
+<script defer src="js/bundle.f1164e49aef8ec3bc623.js"></script></body>
+
+</html>
